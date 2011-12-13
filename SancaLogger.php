@@ -29,7 +29,7 @@ class SancaLogger {
         }
         
         if (self::$fileHandle != null)
-            fwrite(self::$fileHandle, "[".$nomeUtente."] - ".date("H").":".date("i").":".date("s")." - ".$stringa."\r\n");
+            fwrite(self::$fileHandle, "[".date("d")."-".date("m").date("Y")." ".date("H").":".date("i").":".date("s")."] [".$nomeUtente."] - ".$stringa."\r\n");
         
     }
 }
